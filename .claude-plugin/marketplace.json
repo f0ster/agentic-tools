@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agentic-tools",
+  "description": "A collection of agentic tooling plugins for Claude Code.",
+  "owner": {
+    "name": "Ryan Foster",
+    "url": "https://github.com/f0ster"
+  },
+  "plugins": [
+    {
+      "name": "cove",
+      "source": "./plugins/cove",
+      "description": "Chain-of-Verification (CoVe) validation for any claim, output, plan, or code change. Adds a /cove command and an auto-triggering skill that rigorously verifies correctness before presenting it as fact.",
+      "version": "0.1.0",
+      "category": "quality",
+      "author": {
+        "name": "Ryan Foster"
+      }
+    }
+  ]
+}
