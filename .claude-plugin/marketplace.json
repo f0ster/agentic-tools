@@ -10,8 +10,8 @@
     {
       "name": "cove",
       "source": "./plugins/cove",
-      "description": "Chain-of-Verification (CoVe) validation for any claim, output, plan, or code change. Adds a /cove command and an auto-triggering skill that rigorously verifies correctness before presenting it as fact.",
-      "version": "0.1.0",
+      "description": "Chain-of-Verification (CoVe) validation for any claim, output, plan, or code change. Invoke with /cove or let the skill auto-trigger to rigorously verify correctness before presenting it as fact.",
+      "version": "0.1.1",
       "category": "quality",
       "author": {
         "name": "Ryan Foster"

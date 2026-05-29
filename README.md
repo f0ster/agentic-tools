@@ -22,7 +22,7 @@ Install:
 
 Use it:
 
-- **Explicit command:** `/cove <what to verify>` — append `quick` for a shallow 3-question pass or `thorough` for a deep 5-7 question pass.
+- **Directly:** type `/cove <what to verify>` — append `quick` for a shallow 3-question pass or `thorough` for a deep 5-7 question pass.
 - **Automatically:** the skill triggers on its own when you say things like "validate this", "verify that", "is this right?", or before committing code and finalizing plans.
 
 ## Adding more plugins
@@ -37,13 +37,13 @@ agentic-tools/
     └── cove/
         ├── .claude-plugin/
         │   └── plugin.json
-        ├── skills/
-        │   └── cove/SKILL.md
-        └── commands/
-            └── cove.md
+        └── skills/
+            └── cove/SKILL.md
 ```
 
 To add a plugin: create `plugins/<name>/` with its `plugin.json` (plus any `skills/`, `commands/`, `agents/`, `hooks/`), then append an entry to the `plugins` array in `marketplace.json`.
+
+> Note: the skill directory is named `cove` (matching the plugin), so it registers as `cove:cove` and typing `/cove` autocompletes to it — the same pattern as `planning-with-files`. Avoid adding a `commands/cove.md`, which would collide with the skill on that name.
 
 ## License
 
